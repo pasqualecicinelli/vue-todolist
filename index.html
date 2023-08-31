@@ -34,9 +34,18 @@
 
 <body>
 
+<!--MILESTONE 1-->
+
+
     <div class="container" id="app">
-        <div>
-           
+        <div class="mt-5">
+            <ul class="list-group">
+                <li v-for="(elementList, index) in toDoList" class="list-group-item"
+                    :class="(elementList.done == true) ? 'text-decoration-line-through' : ''">
+                    {{ elementList.text }}:
+                    {{ elementList.done }}
+                </li>
+            </ul>
         </div>
     </div>
 

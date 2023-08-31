@@ -15,3 +15,11 @@ Predisporre un campo di input testuale e un pulsante "aggiungi": cliccando sul p
 Bonus:
 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+
+## Svolgimento
+
+### MILESTONE 1
+- Ho creato la toDoList in Vue
+- Ho creato una lista in HTML
+- Con il ciclo for ho stampato gli elementi della lista: "text" e "done"
+- Con un if ho verificato se done = false non faccio niente, altrimenti aggingo la classe 'text-decoration-line-through' 
