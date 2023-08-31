@@ -26,18 +26,33 @@ createApp({
 
     methods: {
         elementDelete(index) {
-            
+
             this.toDoList.splice(index, 1);
         },
         addNew() {
-            
+
+
             this.toDoList.unshift({
                 text: this.newText,
-               
+
             })
             this.newText = "";
-            
+
+
         },
-    }
+
+        pressEnter(enter) {
+            if (enter.key == "Enter") this.addNew();
+        },
+
+    },
+
+    created() {
+
+        //Bonus: 1
+
+        window.addEventListener('keypress', this.pressEnter);
+
+    },
 
 }).mount('#app')
