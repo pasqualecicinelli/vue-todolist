@@ -23,3 +23,8 @@ Bonus:
 - Ho creato una lista in HTML
 - Con il ciclo for ho stampato gli elementi della lista: "text" e "done"
 - Con un if ho verificato se done = false non faccio niente, altrimenti aggingo la classe 'text-decoration-line-through' 
+
+### MILESTONE 2
+
+- Aggiungo uno span "delete" con la "X"
+- Aggiungo un metodo "splice" e verifico in base all'indice di eliminare il text giusto dalla lista 

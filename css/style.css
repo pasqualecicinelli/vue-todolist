@@ -1,0 +1,10 @@
+.delete {
+    cursor: pointer;
+    float: right;
+}
+
+ul {
+    clear: both;
+    content: "";
+    display: table;
+}
