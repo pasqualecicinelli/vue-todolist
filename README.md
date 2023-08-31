@@ -28,3 +28,7 @@ Bonus:
 
 - Aggiungo uno span "delete" con la "X"
 - Aggiungo un metodo "splice" e verifico in base all'indice di eliminare il text giusto dalla lista 
+
+### MILESTONE 3
+
+- Aggiungo un input con un bottone "Aggiungi"

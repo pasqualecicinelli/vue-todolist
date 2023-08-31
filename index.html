@@ -42,18 +42,20 @@
             <h1 class="text-center mb-5">Vue To Do List</h1>
 
             <div class="input-group mb-3">
+
+                <!--MILESTONE 3-->
+
                 <input v-model="newText" type="text" class="form-control" placeholder="Nuovo elemento della lista"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
                 <button @click="addNew()" class="btn btn-outline-secondary" type="button"
                     id="button-addon2">Aggiungi</button>
+
             </div>
 
             <ul class="list-group">
                 <li v-for="(elementList, index) in toDoList" class="list-group-item"
                     :class="(elementList.done == true) ? 'text-decoration-line-through' : ''">
-                    {{ elementList.text }}:
-                    {{ elementList.done }}
-
+                    {{ elementList.text }}
 
                     <!--MILESTONE 2-->
                     <!--Delete-->

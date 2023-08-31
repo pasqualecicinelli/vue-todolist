@@ -19,29 +19,25 @@ createApp({
             ],
 
             countList: 0,
-            newText: "",
+            newText: " ",
+
         };
     },
 
     methods: {
         elementDelete(index) {
-            console.log(index);
-            console.log(this.toDoList[index]);
+            
             this.toDoList.splice(index, 1);
         },
         addNew() {
-            console.log(this.newText);
             
-        }
+            this.toDoList.unshift({
+                text: this.newText,
+               
+            })
+            this.newText = "";
+            
+        },
     }
 
 }).mount('#app')
-
-
-/*
-let toDoList = {
-    text: " ",
-    done: false
-};
-
-let newTodoList = { ...toDoList };*/
