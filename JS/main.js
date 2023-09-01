@@ -6,20 +6,21 @@ createApp({
             toDoList: [
                 {
                     text: "Andare dal meccanico",
-                    done: true
+                    done: true,
                 },
                 {
                     text: "Fare la spesa",
-                    done: false
+                    done: false,
                 },
                 {
                     text: "Giocare a calcio",
-                    done: true
+                    done: true,
                 },
             ],
 
             countList: 0,
             newText: " ",
+            newDone: false,
 
         };
     },
@@ -31,12 +32,12 @@ createApp({
         },
         addNew() {
 
-
             this.toDoList.unshift({
                 text: this.newText,
-
+                done:this.newDone,
             })
             this.newText = "";
+            this.newDone = false;
 
 
         },
@@ -47,13 +48,9 @@ createApp({
 
         //Bonus:2
 
-        invertDoneValue() {
+        invertDoneValue(elementList) {
             
-            if (this.done == false) {
-                this.done = true;
-            } else {
-                this.done = false;
-            }
+            elementList.done = !elementList.done;
         },
 
     },

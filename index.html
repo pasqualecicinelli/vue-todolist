@@ -47,7 +47,7 @@
 
                 <input v-model="newText" type="text" class="form-control" placeholder="Nuovo elemento della lista"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button @click="addNew()" class="btn btn-outline-secondary" type="button"
+                <button @click="addNew()" class="btn btn-outline-success" type="button"
                     id="button-addon2">Aggiungi</button>
 
             </div>
@@ -56,14 +56,14 @@
 
                 <!--Bonus:2-->
 
-                <li @click="invertDoneValue()" v-for="(elementList, index) in toDoList" class="list-group-item"
+                <li @click="invertDoneValue(elementList)" v-for="(elementList, index) in toDoList" class="list-group-item"
                     :class="(elementList.done == true) ? 'text-decoration-line-through' : ''">
                     {{ elementList.text }}
 
                     <!--MILESTONE 2-->
                     <!--Delete-->
 
-                    <span class="delete" @click="elementDelete(index)"><i class="fa-solid fa-xmark"></i> </span>
+                    <span class="delete text-danger" @click="elementDelete(index)"><i class="fa-solid fa-xmark"></i> </span>
                 </li>
             </ul>
         </div>
