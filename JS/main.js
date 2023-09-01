@@ -6,7 +6,7 @@ createApp({
             toDoList: [
                 {
                     text: "Andare dal meccanico",
-                    done: false
+                    done: true
                 },
                 {
                     text: "Fare la spesa",
@@ -43,6 +43,17 @@ createApp({
 
         pressEnter(enter) {
             if (enter.key == "Enter") this.addNew();
+        },
+
+        //Bonus:2
+
+        invertDoneValue() {
+            
+            if (this.done == false) {
+                this.done = true;
+            } else {
+                this.done = false;
+            }
         },
 
     },

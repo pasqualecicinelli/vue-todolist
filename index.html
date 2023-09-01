@@ -53,7 +53,10 @@
             </div>
 
             <ul class="list-group">
-                <li v-for="(elementList, index) in toDoList" class="list-group-item"
+
+                <!--Bonus:2-->
+
+                <li @click="invertDoneValue()" v-for="(elementList, index) in toDoList" class="list-group-item"
                     :class="(elementList.done == true) ? 'text-decoration-line-through' : ''">
                     {{ elementList.text }}
 
